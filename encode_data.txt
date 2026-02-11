@@ -1,0 +1,6 @@
+Beneath a violet dusk sky, Arjun tapped his keyboard in a quiet corner of the metro, headphones leaking soft synth waves ♫ into the hum of wheels on steel. A notification blinked: “Build failed at 23:59 — retry?” He sighed, muttering “चलो…” while scribbling equations like ∫time dt = life on the back of a receipt scented faintly of cardamom chai.
+
+Across the aisle, a child traced shapes on fogged glass—circles, stars, a wobbly ∞—while her grandmother whispered stories in বাংলা, each word rolling like warm marbles. Digital billboards outside flashed 50% OFF, ¡OFERTA!, 特价, and СКИДКА, painting the carriage in shifting colors like a low-resolution aurora.
+
+His screen reflected tired eyes and a stubborn line of code:if (hope > fear) return "try again";
+He smiled at that, added a ☀️ emoji to his commit message, and pressed enter. Somewhere between station Δ and station Ω, the train rattled forward, carrying students, dreamers, insomniacs, and one quiet programmer who believed that even in a world of bugs and buffers, small fixes could ripple outward like waves in a shared, infinite loop ♾️.
